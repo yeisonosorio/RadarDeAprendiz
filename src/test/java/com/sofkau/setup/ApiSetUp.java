@@ -8,7 +8,7 @@ import static com.sofkau.utils.Log4jValues.LOG4J_PROPERTY_PATH;
 
 public class ApiSetUp {
 
-//prueba
+//prueba rama debe verse
     protected Actor actor = new Actor("Usuario");
 
     protected void setUp(String urlBase) {
