@@ -7,6 +7,8 @@ import org.apache.log4j.PropertyConfigurator;
 import static com.sofkau.utils.Log4jValues.LOG4J_PROPERTY_PATH;
 
 public class ApiSetUp {
+
+//prueba
     protected Actor actor = new Actor("Usuario");
 
     protected void setUp(String urlBase) {
