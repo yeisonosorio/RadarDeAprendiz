@@ -1,12 +1,12 @@
 package com.sofkau.stepdefinitions.webUI;
 
-import com.sofkau.setup.ApiSetUp;
+import com.sofkau.setup.Configuracion;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 
-public class InicioSesionSD extends ApiSetUp {
+public class InicioSesionSD extends Configuracion {
 
     public static Logger LOGGER = Logger.getLogger(InicioSesionSD.class);
 
