@@ -22,10 +22,10 @@ Feature: Iniciar sesion en la pagina radar
     When el usuario envia credenciales invalidas, como <email> <password_mal>
     Then el usuario debe ver un mensaje de error de inicio de sesion
     Examples:
-      | email               | password_mal |
-      | "yei3son@gmail.com" | "holah3ola"  |
-      | "ju3an@gmail.com"   | "1234356"    |
-      | "3yuli@gmail.com"   | "pas2sword"  |
+      | email            | password_mal |
+      | "-@gmail.com"    | "******"     |
+      | "****@gmail.com" | "1234356"    |
+      | "////@gmail.com" | "pas2sword"  |
 
 
   Scenario Outline: Validacion de campos obligatorios password
