@@ -20,7 +20,8 @@ import static net.thucydides.core.webdriver.ThucydidesWebDriverSupport.getDriver
 
 public class Configuracion {
     private static final String SWITCHES = "--remote-allow-origins=*";
-    private static final String ACTOR = "Yeison";
+    private static final String ACTOR = "User";
+
     private static final int DIEZ_SEGUNDOS = 10;
 
     @Managed()
