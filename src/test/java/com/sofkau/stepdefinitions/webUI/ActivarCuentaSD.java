@@ -6,12 +6,12 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
-import static com.sofkau.Tasks.webUI.ActivarCuenta.activarCuenta;
+
+import static com.sofkau.Tasks.webUI.ActivarCuentas.activarCuentas;
+import static com.sofkau.Tasks.webUI.IniciarSesion.iniciarSesion;
 import static com.sofkau.Tasks.webUI.IrLogin.irLogin;
-import static com.sofkau.questions.webUI.MensajeRegistro.mensajeRegistro;
-import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
+
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-import static org.hamcrest.core.IsEqual.equalTo;
 
 public class ActivarCuentaSD extends Configuracion {
 
@@ -33,18 +33,21 @@ public class ActivarCuentaSD extends Configuracion {
         }
     }
 
-    @When("el admin envia las credenciales con google")
-    public void elAdminEnviaLasCredencialesConGoogle() {
+
+    @When("el admin envia las credenciales {string} {string}")
+    public void elAdminEnviaLasCredenciales(String email, String password) {
+
         try {
             theActorInTheSpotlight().attemptsTo(
-                    activarCuenta()
-                            .yConElEmail("retofinalsofkaradar@gmail.com ")
-                            .conElPassword("Sofkaradar12*")
+                    iniciarSesion()
+                            .yConElEmail(email)
+                            .conElPassword(password),
+                    activarCuentas()
             );
         } catch (Exception e) {
             LOGGER.info("fallo el proceso de activar la cuenta");
             LOGGER.warn(e.getMessage());
-            quitarDriver();
+        //    quitarDriver();
         }
     }
 

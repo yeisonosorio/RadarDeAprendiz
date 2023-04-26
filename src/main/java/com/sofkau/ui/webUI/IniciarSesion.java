@@ -18,5 +18,13 @@ public class IniciarSesion extends PageObject {
     public static final Target BTN_LOGIN = Target.the("Boton login")
             .located(By.id("btn-login"));
 
+    public static final Target BTN_OK = Target.the("Boton login")
+            .located(By.xpath("//*[@class='swal2-confirm swal2-styled']"));
+
+
+    public static final Target BOTON_PASSWORD2 = Target.the("Boton login")
+            .located(By.xpath("//*[@id='basic-addon1'][2]"));
+
+
 
 }

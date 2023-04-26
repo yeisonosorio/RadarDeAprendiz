@@ -6,23 +6,14 @@ import org.openqa.selenium.By;
 
 public class ActivarCuenta extends PageObject {
 
-
-    public static final Target BOTON_GOOGLE = Target.the("Boton Google")
-            .located(By.xpath("//button[@_ngcontent-tfi-c1=''][contains(text(), 'Google')]"));
-
-
-    public static final Target CAMPO_CORREO = Target.the("campo correo")
-            .located(By.id("identifierId"));
+    public static final Target BOTON_ACTIVAR = Target.the("Campo email")
+            .located(By.xpath("(//*[@id='activate'])[4]"));
 
 
+    public static final Target BOTON_TRUE = Target.the("BOTON TRUE")
+            .located(By.xpath("(//option[@value=\"true\"])[4]"));
 
-    public static final Target CAMPO_PASSW = Target.the("campo correo")
-            .located(By.id("(//*[@name='Passwd'])[1]"));
-
-
-    public static final Target BOTON_SIGUIENTE = Target.the("campo correo")
-            .located(By.xpath("//*[@class='VfPpkd-vQzf8d' and contains(text(), 'Siguiente')]"));
-
-
+    public static final Target BTN_OK_ACTIVAR = Target.the("Boton login")
+            .located(By.xpath("//*[@class='swal2-confirm swal2-styled']"));
 
 }
