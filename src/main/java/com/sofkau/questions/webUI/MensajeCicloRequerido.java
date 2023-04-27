@@ -9,7 +9,7 @@ public class MensajeCicloRequerido {
 
 
     public static final Target MENSAJE_CICLO = Target.the("mensaje training creado")
-            .located(By.xpath("//*[@class='altoMensaje' and contains(text(),' * El Ciclo no puede ir vacio')]"));
+            .located(By.xpath("//*[@class='altoMensaje' and contains(text(),' * Cicle is required')]"));
 
 
 

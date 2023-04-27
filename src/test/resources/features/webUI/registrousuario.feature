@@ -33,7 +33,7 @@ Feature: Registrar usuario en la pagina radar
     When el usuario envia las credenciales con los campos <nombre> <password>
     Then el usuario vera un <mensaje>
     Examples:
-      | nombre      | password    | mensaje                                |
+      | nombre      | password    | mensaje                   |
       | "Usuario 1" | "password1" | "* El Email es requerido" |
       | "Usuario 2" | "password2" | "* El Email es requerido" |
       | "Usuario 3" | "password3" | "* El Email es requerido" |
@@ -43,7 +43,7 @@ Feature: Registrar usuario en la pagina radar
     When el usuario envia las credenciales del campo <nombre> <email>
     Then el usuario podra ver un <mensaje>
     Examples:
-      | nombre      | email              | mensaje                        |
+      | nombre      | email              | mensaje                      |
       | "Usuario 1" | "email1@gmail.com" | "* El password es requerido" |
       | "Usuario 2" | "email2@gmail.com" | "* El password es requerido" |
       | "Usuario 3" | "email3@gmail.com" | "* El password es requerido" |

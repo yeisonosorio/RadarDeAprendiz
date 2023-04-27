@@ -8,5 +8,5 @@ Feature: Activar cuentas de usuarios
     When el admin envia las credenciales <email> <password>
     Then el admin debe poder ingresar a la pagina y activar las cuentas de los usuarios
     Examples:
-      | email                | password |
-      | "yeisonQA@gmail.com" | "123456" |
+      | email                   | password |
+      | "111yeisonQA@gmail.com" | "123456" |

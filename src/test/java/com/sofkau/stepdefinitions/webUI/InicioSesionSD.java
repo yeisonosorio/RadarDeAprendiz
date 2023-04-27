@@ -14,7 +14,6 @@ import static com.sofkau.Tasks.webUI.IniciarSesionEmail.iniciarSesionEmail;
 import static com.sofkau.Tasks.webUI.IniciarSesionPassword.iniciarSesionPassword;
 import static com.sofkau.Tasks.webUI.InicioSesionFallido.inicioSesionFallido;
 import static com.sofkau.Tasks.webUI.IrLogin.irLogin;
-import static com.sofkau.Tasks.webUI.IrRegistro.irRegistro;
 import static com.sofkau.questions.webUI.MensajeInicioSesion.mensajeInicioSesion;
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;

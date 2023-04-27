@@ -18,5 +18,4 @@ public class DatosTraining extends PageObject {
     public static final Target BOTON_CREAR_NEW_TRAINING = Target.the("Campo ciclo")
             .located(By.xpath("//button[normalize-space()='Create Training']"));
 
-
 }

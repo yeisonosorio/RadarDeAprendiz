@@ -34,8 +34,6 @@ public class IniciarSesion implements Task {
                 Enter.theValue(email).into(CAMPO_EMAIL_LOGIN),
                 Enter.theValue(password).into(CAMPO_PASSWORD_LOGIN),
                 Click.on(BTN_LOGIN),
-                //  WaitUntil.the(MENSAJE_INICIAR_ERROR, isClickable()).forNoMoreThan(10).seconds(),
-                //Click.on(MENSAJE_INICIAR_ERROR),
                 Click.on(BTN_OK)
 
         );

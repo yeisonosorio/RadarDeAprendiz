@@ -10,7 +10,7 @@ public class MensajeTituloRequerido {
 
 
     public static final Target MENSAJE_TITULO = Target.the("mensaje training creado")
-            .located(By.xpath("//*[@class='altoMensaje' and contains(text(),' * El titulo no puede ir vacio ')]"));
+            .located(By.xpath("//*[@class='altoMensaje' and contains(text(),' * Title is required ')]"));
 
 
 

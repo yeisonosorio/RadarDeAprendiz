@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 
 public class IrRegistro  extends PageObject {
 
-    public static final Target BOTON_REGISTRO = Target.the("boton DONDE ENVIAR")
+    public static final Target BOTON_REGISTRO = Target.the("Registro")
             .located(By.xpath("(//*[@class='nav-link'])[2]"));
 
 }

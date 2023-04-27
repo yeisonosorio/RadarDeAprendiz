@@ -22,11 +22,11 @@ Feature: Crear Training  League
     And procede a crear un Training repetidos envia <titulo> <ciclo>
     Then el coach debe ver un <mensaje> de error indicando que no se pudo crear el Training
     Examples:
-      | email              | password   | titulo            | ciclo | mensaje                                           |
-      | "yeison@gmail.com" | "holahola" | "JAVA DESDE 0"    | "C1"  | "Failed: Only Caoch can Create a Training League" |
-      | "yeison@gmail.com" | "holahola" | "NODE DESDE 0"    | "C2"  | "Failed: Only Caoch can Create a Training League" |
-      | "yeison@gmail.com" | "holahola" | "C DESDE 0"       | "C1"  | "Failed: Only Caoch can Create a Training League" |
-      | "yeison@gmail.com" | "holahola" | "ANGULAR DESDE 0" | "C3"  | "Failed: Only Caoch can Create a Training League" |
+      | email              | password   | titulo            | ciclo | mensaje                                |
+      | "yeison@gmail.com" | "holahola" | "JAVA DESDE 0"    | "C1"  | "Failed: Training couldn't be created" |
+      | "yeison@gmail.com" | "holahola" | "NODE DESDE 0"    | "C2"  | "Failed: Training couldn't be created" |
+      | "yeison@gmail.com" | "holahola" | "C DESDE 0"       | "C1"  | "Failed: Training couldn't be created" |
+      | "yeison@gmail.com" | "holahola" | "ANGULAR DESDE 0" | "C3"  | "Failed: Training couldn't be created" |
 
 
   Scenario Outline: Crear Training League con caracteres especiales
@@ -36,9 +36,9 @@ Feature: Crear Training  League
     Then el coach debe ver un <mensaje> de error indicando que no se permiten caracteres
     Examples:
       | email              | password   | titulo         | ciclo | mensaje                                                                                                                                                               |
-      | "yeison@gmail.com" | "holahola" | "[]]]]}"       | "C1"  | "* El titulo no debe contener caracteres especiales, ademas solo puede contar con un espacio entre caracteres, se debe evitar el uso de espacios al comienzo y final" |
-      | "yeison@gmail.com" | "holahola" | "////////"     | "C2"  | "* El titulo no debe contener caracteres especiales, ademas solo puede contar con un espacio entre caracteres, se debe evitar el uso de espacios al comienzo y final" |
-      | "yeison@gmail.com" | "holahola" | "++**********" | "C1"  | "* El titulo no debe contener caracteres especiales, ademas solo puede contar con un espacio entre caracteres, se debe evitar el uso de espacios al comienzo y final" |
+      | "yeison@gmail.com" | "holahola" | "[]]]]}"       | "C1"  | "* The title must not contain special characters, it can also only have a space between characters, the use of spaces should be avoided at the beginning and end" |
+      | "yeison@gmail.com" | "holahola" | "////////"     | "C2"  | "* The title must not contain special characters, it can also only have a space between characters, the use of spaces should be avoided at the beginning and end" |
+      | "yeison@gmail.com" | "holahola" | "++**********" | "C1"  | "* The title must not contain special characters, it can also only have a space between characters, the use of spaces should be avoided at the beginning and end" |
 
 
   Scenario Outline: Crear Training League con el Titulo vacio
@@ -47,10 +47,10 @@ Feature: Crear Training  League
     And procede a enviar los datos del Training League  <ciclo>
     Then el coach debe ver un <mensaje> de error
     Examples:
-      | email              | password   | ciclo | mensaje                         |
-      | "yeison@gmail.com" | "holahola" | "C1"  | "* El titulo no puede ir vacio" |
-      | "yeison@gmail.com" | "holahola" | "C2"  | "* El titulo no puede ir vacio" |
-      | "yeison@gmail.com" | "holahola" | "C1"  | "* El titulo no puede ir vacio" |
+      | email              | password   | ciclo | mensaje               |
+      | "yeison@gmail.com" | "holahola" | "C1"  | "* Title is required" |
+      | "yeison@gmail.com" | "holahola" | "C2"  | "* Title is required" |
+      | "yeison@gmail.com" | "holahola" | "C1"  | "* Title is required" |
 
 
   Scenario Outline: Crear Training League con el Ciclo vacio
@@ -59,10 +59,11 @@ Feature: Crear Training  League
     And procede a enviar los datos del Training League solo <titulo>
     Then el coach debe ver un <mensaje>
     Examples:
-      | email              | password   | titulo                | mensaje                        |
-      | "yeison@gmail.com" | "holahola" | "JAVA AVANZADO"       | "* El Ciclo no puede ir vacio" |
-      | "yeison@gmail.com" | "holahola" | "NODE JS AVANZADO"    | "* El Ciclo no puede ir vacio" |
-      | "yeison@gmail.com" | "holahola" | "C AVANZADO"          | "* El Ciclo no puede ir vacio" |
-      | "yeison@gmail.com" | "holahola" | "JAVASCRIPT AVANZADO" | "* El Ciclo no puede ir vacio" |
+      | email              | password   | titulo                | mensaje               |
+      | "yeison@gmail.com" | "holahola" | "JAVA AVANZADO"       | "* Cicle is required" |
+      | "yeison@gmail.com" | "holahola" | "NODE JS AVANZADO"    | "* Cicle is required" |
+      | "yeison@gmail.com" | "holahola" | "C AVANZADO"          | "* Cicle is required" |
+      | "yeison@gmail.com" | "holahola" | "JAVASCRIPT AVANZADO" | "* Cicle is required" |
+
 
 
