@@ -14,7 +14,6 @@ public class IrRegistro implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                //  WaitUntil.the(CAMPO_NOMBRE, isClickable()).forNoMoreThan(10).seconds(),
                 Click.on(BOTON_REGISTRO)
 
 
