@@ -4,7 +4,7 @@ public enum UrlResources {
 
     RADAR_BASE_URL("https://final-back-end-production.up.railway.app"),
     GET_RESOURCE("/login"),
-    REGISTER_USER_BASE_URL("https://final-back-end-production.up.railway.app/login/register/login"),
+    REGISTER_USER_BASE_URL("https://final-back-end-production.up.railway.app/login"),
     POST_REGISTER_USER_RESOURCE("/register"),
     ACTUALIZAR_USER_BASE_URL("https://final-back-end-production.up.railway.app/login/"),
     PUT_USER_RESOURCE("update/"),
@@ -13,7 +13,9 @@ public enum UrlResources {
     GET_ALL_STUDENT_EVALUATION_BASE_URL("https://final-back-end-production.up.railway.app/student-evaluation/get-all/"),
     GET_STUDENT_EVALUATION_RESOURCE("/"),
     GET_ALL_RADARES_BASE_URL("https://final-back-end-production.up.railway.app"),
-    GET_RADAR_RESOURCE("/radar");
+    GET_RADAR_RESOURCE("/radar"),
+    ACTUALIZAR_CRITERIA_BASE_URL("https://final-back-end-production.up.railway.app/radar/update-criteria/"),
+    PUT_CRITERIA_RESOURCE("update-criteria/");
     private final String value;
 
     UrlResources(String value){

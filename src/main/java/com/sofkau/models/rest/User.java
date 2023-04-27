@@ -7,6 +7,33 @@ public class User {
     private String name;
     private String activate;
     private String role;
+    private String area;
+    private String descriptor;
+    private String minQualiRequired;
+
+    public String getArea() {
+        return area;
+    }
+
+    public void setArea(String area) {
+        this.area = area;
+    }
+
+    public String getDescriptor() {
+        return descriptor;
+    }
+
+    public void setDescriptor(String descriptor) {
+        this.descriptor = descriptor;
+    }
+
+    public String getMinQualiRequired() {
+        return minQualiRequired;
+    }
+
+    public void setMinQualiRequired(String minQualiRequired) {
+        this.minQualiRequired = minQualiRequired;
+    }
 
     public String getUid() {
         return uid;
