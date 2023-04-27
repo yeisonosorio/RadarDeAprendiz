@@ -6,9 +6,8 @@ import org.openqa.selenium.By;
 
 public class MensajeRegistro extends PageObject {
 
-    public static final Target MENSAJE_REGISTRO = Target.the("nombre cliente")
-            .located(By.xpath("//*[@class='swal2-html-container'][1]"));
-
+    public static final Target MENSAJE_REGISTRO = Target.the("nombre ok")
+            .located(By.xpath("//*[@class='swal2-confirm swal2-styled']"));
 
 
 

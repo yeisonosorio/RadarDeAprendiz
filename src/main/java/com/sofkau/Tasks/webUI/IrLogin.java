@@ -3,27 +3,27 @@ package com.sofkau.Tasks.webUI;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-import net.serenitybdd.screenplay.actions.Enter;
 
+import static com.sofkau.ui.webUI.IrLogin.BOTON_IR_LOGIN;
 import static com.sofkau.ui.webUI.IrRegistro.BOTON_REGISTRO;
-import static com.sofkau.ui.webUI.RegistroUsuario.*;
+import static com.sofkau.ui.webUI.RegistroUsuario.BOTON_LOGIN;
 
-public class IrRegistro implements Task {
+public class IrLogin implements Task {
+
 
 
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                Click.on(BOTON_REGISTRO)
+                Click.on(BOTON_IR_LOGIN)
 
 
         );
 
     }
 
-    public static IrRegistro irRegistro() {
-        return new IrRegistro();
+    public static IrLogin irLogin() {
+        return new IrLogin();
     }
-
 
 }
