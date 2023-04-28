@@ -7,13 +7,15 @@ import org.openqa.selenium.By;
 public class ActivarCuenta extends PageObject {
 
     public static final Target BOTON_ACTIVAR = Target.the("Campo email")
-            .located(By.xpath("(//*[@id='activate'])[4]"));
+            .located(By.xpath("(//*[@id='activate'])[5]"));
 
 
-    public static final Target BOTON_TRUE = Target.the("BOTON TRUE")
-            .located(By.xpath("(//option[@value=\"true\"])[4]"));
+    public static final Target BTN_OK = Target.the("Boton login")
+            .located(By.xpath("//button[normalize-space()='OK']"));
 
-    public static final Target BTN_OK_ACTIVAR = Target.the("Boton login")
-            .located(By.xpath("//*[@class='swal2-confirm swal2-styled']"));
+    public static final Target BTN_ACTIVACION_OK = Target.the("Boton login")
+            .located(By.xpath("//button[normalize-space()='OK']"));
+
+
 
 }

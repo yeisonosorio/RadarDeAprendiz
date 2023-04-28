@@ -15,7 +15,7 @@ public class IniciarSesion extends PageObject {
             .located(By.id("input-password"));
 
 
-    public static final Target BTN_LOGIN = Target.the("Boton login")
+    public static final Target BTN_LOGIN = Target.the("Btn login")
             .located(By.id("btn-login"));
 
     public static final Target BTN_OK = Target.the("Boton login")

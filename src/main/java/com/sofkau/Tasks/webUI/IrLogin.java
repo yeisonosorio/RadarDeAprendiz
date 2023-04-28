@@ -3,10 +3,7 @@ package com.sofkau.Tasks.webUI;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 import net.serenitybdd.screenplay.actions.Click;
-
 import static com.sofkau.ui.webUI.IrLogin.BOTON_IR_LOGIN;
-import static com.sofkau.ui.webUI.IrRegistro.BOTON_REGISTRO;
-import static com.sofkau.ui.webUI.RegistroUsuario.BOTON_LOGIN;
 
 public class IrLogin implements Task {
 

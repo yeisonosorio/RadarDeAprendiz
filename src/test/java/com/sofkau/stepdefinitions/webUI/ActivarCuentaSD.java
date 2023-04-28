@@ -11,7 +11,11 @@ import static com.sofkau.Tasks.webUI.ActivarCuentas.activarCuentas;
 import static com.sofkau.Tasks.webUI.IniciarSesion.iniciarSesion;
 import static com.sofkau.Tasks.webUI.IrLogin.irLogin;
 
+import static com.sofkau.questions.webUI.MensajeActivacion.mensajeActivacion;
+import static com.sofkau.questions.webUI.MensajeInicioSesion.mensajeInicioSesion;
+import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
+import static org.hamcrest.core.IsEqual.equalTo;
 
 public class ActivarCuentaSD extends Configuracion {
 
@@ -47,13 +51,14 @@ public class ActivarCuentaSD extends Configuracion {
         } catch (Exception e) {
             LOGGER.info("fallo el proceso de activar la cuenta");
             LOGGER.warn(e.getMessage());
-        //    quitarDriver();
+            //    quitarDriver();
         }
     }
 
     @Then("el admin debe poder ingresar a la pagina y activar las cuentas de los usuarios")
     public void elAdminDebePoderIngresarALaPaginaYActivarLasCuentasDeLosUsuarios() {
         try {
+            seeThat(mensajeActivacion(), equalTo("OK"));
 
 
         } catch (Exception e) {
