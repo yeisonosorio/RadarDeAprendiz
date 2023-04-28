@@ -28,7 +28,7 @@ public class RegistroUsuario extends PageObject {
             .located(By.xpath("//*[@id='basic-addon1'][1]"));
 
 
-    public static final Target BOTON_EMAIL = Target.the("Boton campo nombre")
+    public static final Target BOTON_EMAIL = Target.the("Boton campo email")
             .located(By.xpath("//*[@id='basic-addon1'][2]"));
 
 

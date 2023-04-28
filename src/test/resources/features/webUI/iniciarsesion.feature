@@ -15,7 +15,7 @@ Feature: Iniciar sesion en la pagina radar
       | email              | password   |
       | "yeison@gmail.com" | "holahola" |
       | "juan@gmail.com"   | "123456"   |
-      | "111yuli@gmail.com"   | "password" |
+      | "logo@gmail.com"   | "123456"   |
 
   Scenario Outline: Credenciales invalidas
     Given el usuario esta en el inicio de sesion de la pagina
